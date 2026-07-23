@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mun_Bouquet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div>
+                <h1>Mun_Bouquet</h1>
+                <p>Menjual rangkaian bunga artificial, bunga satin, bunga kawat bulu, dan lainnya.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+
+    <main class="content">
+        <section class="card">
+            <h2>Profil Toko Mun_Bouquet</h2>
+            <p>Mun_Bouquet adalah toko yang menjual rangkaian bunga artificial, bunga satin, bunga kawat bulu, dan lain-lain. Toko ini didirikan pada tahun 2020 oleh seorang pengusaha muda yang memiliki passion dalam dunia florist. Dengan berbagai macam produk yang ditawarkan, Mun_Bouquet berkomitmen untuk memberikan kualitas terbaik kepada para pelanggannya. Selain itu, toko ini juga menyediakan layanan custom order untuk memenuhi kebutuhan spesial pelanggan.</p>
+            <p>Toko Mun_Bouquet memiliki beberapa produk populer seperti <span class="highlight">Bunga Satin</span>, <span class="highlight">Bunga Artificial</span>, dan <span class="highlight">Bunga Kawat Bulu</span>.</p>
+        </section>
+
+        <section class="card best-sellers">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Favorit pelanggan</p>
+                    <h2>Produk Paling Laris</h2>
+                </div>
+                <a class="see-all" href="produk.html">Lihat semua produk &rarr;</a>
+            </div>
+
+            <div class="best-seller-grid">
+                <article class="best-seller-card">
+                    <div class="best-seller-image">
+                        <img src="images/buket_1.png" alt="Buket Artificial paling laris">
+                        <span class="rank-badge">#1 Terlaris</span>
+                    </div>
+                    <div class="best-seller-info">
+                        <h3>Buket Artificial</h3>
+                        <p>Rangkaian cantik yang tahan lama dan cocok untuk berbagai momen.</p>
+                        <strong>Sudah dipesan 48 kali</strong>
+                    </div>
+                </article>
+
+                <article class="best-seller-card">
+                    <div class="best-seller-image">
+                        <img src="images/buket_2.png" alt="Buket Satin paling laris">
+                        <span class="rank-badge">#2 Terlaris</span>
+                    </div>
+                    <div class="best-seller-info">
+                        <h3>Buket Satin</h3>
+                        <p>Buket elegan dengan tampilan romantis untuk hadiah istimewa.</p>
+                        <strong>Sudah dipesan 36 kali</strong>
+                    </div>
+                </article>
+
+                <article class="best-seller-card">
+                    <div class="best-seller-image">
+                        <img src="images/buket_3.png" alt="Buket Kawat Bulu paling laris">
+                        <span class="rank-badge">#3 Terlaris</span>
+                    </div>
+                    <div class="best-seller-info">
+                        <h3>Buket Kawat Bulu</h3>
+                        <p>Desain unik dan lembut yang menjadi pilihan favorit pelanggan.</p>
+                        <strong>Sudah dipesan 29 kali</strong>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="card-grid">
+            <section class="contact-card">
+                <h3>Kontak Kami</h3>
+                <p>Alamat: Batu Piring seberang samsat paringin</p>
+                <p>No WA: 083179924844</p>
+            </section>
+
+            <section class="order-card">
+                <h3>Order Sekarang</h3>
+                <form id="order-form">
+                    <label for="customer-name">Nama</label>
+                    <input id="customer-name" name="customer-name" type="text" placeholder="Masukkan nama Anda" required>
+
+                    <label for="customer-phone">Nomor WA</label>
+                    <input id="customer-phone" name="customer-phone" type="tel" placeholder="Contoh: 081234567890" required>
+
+                    <label for="product-type">Jenis</label>
+                    <select id="product-type" name="product-type" required>
+                        <option value="Buket Artificial Kecil">Buket Artificial Kecil</option>
+                        <option value="Buket Artificial Sedang">Buket Artificial Sedang</option>
+                        <option value="Buket Artificial Besar">Buket Artificial Besar</option>
+                        <option value="Buket Satin 7 Tangkai">Buket Satin 7 Tangkai</option>
+                        <option value="Buket Satin 10 Tangkai">Buket Satin 10 Tangkai</option>
+                        <option value="Buket Satin 20 Tangkai">Buket Satin 20 Tangkai</option>
+                        <option value="Buket Satin Custom Jumlah">Buket Satin Custom Jumlah</option>
+                        <option value="Buket Kawat Bulu Kecil">Buket Kawat Bulu Kecil</option>
+                        <option value="Buket Kawat Bulu Sedang">Buket Kawat Bulu Sedang</option>
+                        <option value="Buket Kawat Bulu Besar">Buket Kawat Bulu Besar</option>
+                        <option value="Buket Custom">Buket Custom</option>
+                    </select>
+
+                    <label for="product-quantity">Jumlah</label>
+                    <input id="product-quantity" name="product-quantity" type="number" min="1" value="1" required>
+
+                    <label for="order-date">Tanggal Pemesanan</label>
+                    <input id="order-date" name="order-date" type="date" required readonly aria-readonly="true" tabindex="-1">
+
+                    <label for="pickup-date">Tanggal Pengambilan Pesanan</label>
+                    <input id="pickup-date" name="pickup-date" type="date" required>
+                    <small class="date-note">Pesanan harus diambil sebelum hari acara, apabila pemesanan dilakukan saat hari acara akan di kenakan biaya tambahan. Silakan pilih tanggal pengambilan yang sesuai.</small>
+
+                    <label for="order-notes">Catatan</label>
+                    <textarea id="order-notes" name="order-notes" rows="4" placeholder="Contoh: kirim tanpa pita, untuk ulang tahun"></textarea>
+
+                    <input type="submit" value="Kirim Pesanan">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2026 Toko Mun_Bouquet. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const storePhone = '6283179924844';
+            const name = document.getElementById('customer-name').value.trim();
+            const phone = document.getElementById('customer-phone').value.trim();
+            const product = document.getElementById('product-type').value;
+            const quantity = document.getElementById('product-quantity').value;
+            const orderDate = document.getElementById('order-date').value;
+            const pickupDate = document.getElementById('pickup-date').value;
+            const notes = document.getElementById('order-notes').value.trim();
+
+            const messageLines = [
+                'Pesanan Baru Buket Toko Mun_Bouquet:',
+                'Nama Pembeli: ' + name,
+                'Nomor WA: ' + phone,
+                'Produk: ' + product,
+                'Jumlah: ' + quantity,
+                'Tanggal pemesanan: ' + formatDate(orderDate),
+                'Tanggal pengambilan: ' + formatDate(pickupDate),
+            ];
+
+            if (notes) {
+                messageLines.push('Catatan: ' + notes);
+            }
+
+            const message = encodeURIComponent(messageLines.join('\n'));
+            const whatsappUrl = 'https://api.whatsapp.com/send?phone=' + storePhone + '&text=' + message;
+
+            window.open(whatsappUrl, '_blank');
+        });
+
+        const orderDateInput = document.getElementById('order-date');
+        const pickupDateInput = document.getElementById('pickup-date');
+
+        function getToday() {
+            const today = new Date();
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+            return year + '-' + month + '-' + day;
+        }
+
+        function formatDate(dateValue) {
+            return new Date(dateValue + 'T00:00:00').toLocaleDateString('id-ID', {
+                day: '2-digit',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+
+        const today = getToday();
+        orderDateInput.value = today;
+        pickupDateInput.min = today;
+
+        pickupDateInput.addEventListener('change', function () {
+            if (pickupDateInput.value < orderDateInput.value) {
+                pickupDateInput.setCustomValidity('Tanggal pengambilan tidak boleh sebelum tanggal pemesanan.');
+            } else {
+                pickupDateInput.setCustomValidity('');
+            }
+        });
+    </script>
+</body>
+</html>
